@@ -8,61 +8,61 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onStartClick }) => {
   // Número para o botão direto do WhatsApp
-  const WHATSAPP_NUMBER = "5515998623100";
+  const WHATSAPP_NUMBER = "5515996153318";
 
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Olá! Visitei seu site e gostaria de verificar disponibilidade para agendamento.");
+    const message = encodeURIComponent("Olá! Visitei a sua Bio Premium e gostaria de verificar disponibilidade para agendamento.");
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-center text-center py-10 px-6 min-h-[75vh] bg-gradient-to-b from-sage-100 to-sage-50 rounded-b-[3rem] shadow-sm">
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
-        {/* Decorative background element */}
-        <div className="absolute -top-20 -right-20 w-64 h-64 bg-sage-300 rounded-full blur-3xl"></div>
-        <div className="absolute top-40 -left-10 w-40 h-40 bg-sage-400 rounded-full blur-3xl"></div>
+    <section className="relative flex flex-col items-center justify-center text-center pt-16 pb-6 px-6 min-h-[75vh] bg-gradient-to-b from-brand-100 via-brand-50 to-white overflow-hidden">
+      <div className="absolute inset-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
+        {/* Decorative background elements */}
+        <div className="absolute -top-20 -right-20 w-80 h-80 bg-brand-300 rounded-full blur-[80px]"></div>
+        <div className="absolute top-40 -left-20 w-72 h-72 bg-brand-400 rounded-full blur-[80px]"></div>
       </div>
 
-      <div className="z-10 max-w-lg mx-auto flex flex-col items-center w-full">
+      <div className="z-10 max-w-3xl mx-auto flex flex-col items-center w-full mt-4">
 
         {/* Foto de Perfil */}
-        <div className="mb-4 relative group cursor-pointer">
-          <div className="w-32 h-32 rounded-full bg-sage-200 border-4 border-white shadow-md flex items-center justify-center overflow-hidden">
+        <div className="mb-6 relative group inline-block">
+          <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-brand-200 border-[6px] border-white/90 shadow-xl flex items-center justify-center overflow-hidden transition-transform duration-500 hover:scale-[1.02]">
             <img
-              src="/profile.jpg"
-              alt="Foto de Perfil"
-              className="w-full h-full object-cover object-top scale-110"
+              src="/profile-leophols.jpg"
+              alt="Leonardo Phols - Psicólogo"
+              className="w-full h-full object-cover object-center scale-[1.5] translate-y-3"
             />
           </div>
-          {/* Decorative ring */}
-          <div className="absolute inset-0 rounded-full border border-sage-300 scale-110 opacity-50"></div>
+          {/* Decorative subtle ring */}
+          <div className="absolute -inset-3 rounded-full border border-brand-200/50 scale-100 transition-all duration-500 group-hover:scale-105 group-hover:border-brand-300 group-hover:rotate-12"></div>
         </div>
 
         {/* Nome e Especialidade */}
-        <div className="flex flex-col items-center mb-6">
-          <h2 className="text-2xl md:text-3xl font-serif text-sage-900 font-bold tracking-tight">
-            Fernanda Oliveira
+        <div className="flex flex-col items-center mb-8 w-full animate-fade-in">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif text-brand-900 font-bold tracking-tight mb-4">
+            Leonardo Phols
           </h2>
-          <span className="mt-2 px-3 py-1 bg-white/60 text-sage-600 text-[11px] uppercase tracking-widest font-semibold rounded-full border border-sage-200">
-            Psicóloga Clínica &bull; CRP 00/00000
+          <span className="px-5 py-2 bg-white/80 text-brand-700 text-xs sm:text-sm uppercase tracking-[0.2em] font-bold rounded-full border border-brand-200/60 shadow-sm backdrop-blur-sm">
+            Psicólogo &bull; CRP 06/212575
           </span>
         </div>
 
         {/* Título Principal */}
-        <h1 className="text-[2.5rem] md:text-5xl font-serif text-sage-900 leading-[1.15] mb-4">
-          Um espaço seguro para o seu <span className="italic text-sage-600">florescer</span>
+        <h1 className="text-2xl sm:text-3xl md:text-[2.25rem] font-serif text-brand-800 leading-relaxed max-w-2xl px-4 mb-10 font-medium animate-fade-in">
+          Transformando pensamentos, fortalecendo a <span className="italic text-brand-700 font-semibold relative">intimidade</span>
         </h1>
 
-        <div className="w-full max-w-[280px] space-y-3 flex flex-col items-center mb-4">
+        <div className="w-full max-w-[320px] space-y-4 flex flex-col items-center animate-fade-in">
 
           {/* CTA 1: WhatsApp (Prioritário) */}
           <Button
             onClick={handleWhatsAppClick}
             fullWidth
-            className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-lg shadow-green-100 border-none h-12"
+            className="flex items-center justify-center gap-2 shadow-xl shadow-brand-600/20 border-none h-14 text-lg"
           >
-            <MessageCircle className="w-5 h-5" />
-            <span className="font-semibold">Agendar Consulta</span>
+            <MessageCircle className="w-6 h-6 text-white" />
+            <span className="font-semibold text-white">Agendar Sessão</span>
           </Button>
 
           {/* CTA 2: Triagem (Secundário) */}
@@ -70,10 +70,10 @@ export const Hero: React.FC<HeroProps> = ({ onStartClick }) => {
             onClick={onStartClick}
             fullWidth
             variant="outline"
-            className="flex items-center justify-center gap-2 border-sage-300 text-sage-700 hover:bg-sage-100 h-12"
+            className="flex items-center justify-center gap-2 h-14 text-base backdrop-blur-sm transition-colors bg-white/50"
           >
-            <span className="font-medium">Passar por Triagem</span>
-            <ArrowDown className="w-4 h-4 text-sage-500" />
+            <span className="font-semibold text-brand-700">Passar por Triagem</span>
+            <ArrowDown className="w-4 h-4 text-brand-700" />
           </Button>
 
         </div>

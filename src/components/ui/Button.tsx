@@ -15,9 +15,9 @@ export const Button: React.FC<ButtonProps> = ({
   const baseStyles = "px-6 py-3 rounded-xl font-sans font-semibold transition-all duration-300 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm";
   
   const variants = {
-    primary: "bg-sage-600 text-white hover:bg-sage-700 hover:shadow-md",
-    outline: "border-2 border-sage-600 text-sage-700 hover:bg-sage-50",
-    ghost: "bg-white/60 text-sage-800 hover:bg-white"
+    primary: "bg-brand-600 text-white hover:bg-brand-700 hover:shadow-md",
+    outline: "border-[1.5px] border-brand-600 text-brand-700 hover:bg-brand-50",
+    ghost: "bg-white/60 text-brand-800 hover:bg-white"
   };
 
   const width = fullWidth ? "w-full" : "";
