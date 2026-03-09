@@ -29,9 +29,9 @@ export const Hero: React.FC<HeroProps> = ({ onStartClick }) => {
         <div className="mb-6 relative group inline-block">
           <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-brand-200 border-[6px] border-white/90 shadow-xl flex items-center justify-center overflow-hidden transition-transform duration-500 hover:scale-[1.02]">
             <img
-              src="/profile-leophols.jpg"
+              src="/profile leophols.png"
               alt="Leonardo Phols - Psicólogo"
-              className="w-full h-full object-cover object-center scale-[1.5] translate-y-3"
+              className="w-full h-full object-cover object-[center_20%] scale-[1.2]"
             />
           </div>
           {/* Decorative subtle ring */}
