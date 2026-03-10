@@ -5,12 +5,12 @@ const specialties = [
   {
     icon: Puzzle,
     title: "Terapia Cognitivo-Comportamental (TCC)",
-    description: "Resgate sua autoestima e bem-estar na vida íntima."
+    description: "Aprenda a identificar e modificar padrões de pensamento que afetam seu bem-estar."
   },
   {
     icon: Heart,
     title: "Terapia Sexual",
-    description: "Resgate sua autoestima e bem-estar na vida íntima."
+    description: "Promova bem-estar, intimidade e qualidade na sua vida sexual."
   },
   {
     icon: ClipboardList,
