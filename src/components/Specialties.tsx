@@ -9,7 +9,7 @@ const specialties = [
   },
   {
     icon: Heart,
-    title: "Especialista em Terapia Sexual",
+    title: "Terapia Sexual",
     description: "Resgate sua autoestima e bem-estar na vida íntima."
   },
   {
